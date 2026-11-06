@@ -9,4 +9,8 @@
     <%= user.email %>
   </div>
 
+  <div>
+    <strong>Microposts:</strong>
+    <%= user.microposts.first.content if user.microposts.any? %>
+  </div>
 </div>
