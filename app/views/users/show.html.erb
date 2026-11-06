@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @user %>
-<p><%= @user.microposts.first.content %></p>
+<p><%= @user.microposts.first&.content %></p>
 
 <div>
   <%= link_to "Edit this user", edit_user_path(@user) %> |
